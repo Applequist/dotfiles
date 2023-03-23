@@ -19,3 +19,6 @@ export LC_ALL='en_US.UTF-8';
 # Hide the "default interactive shell is now zsh" warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
 
+# Add a bit of color to man pages.
+export MANPAGER="/usr/bin/less -R --use-color -Ddg -Du+y"
+
