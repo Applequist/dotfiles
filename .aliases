@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# Easier navigation:
+alias ..="cd .."
+alias ...="cd ../.."
+
+# Shortcuts
+alias d="cd ~/Documents"
+alias r="cd ~/Repositories"
+alias dl="cd ~/Downloads"
+
+# Enable aliases to be sudo'ed
+alias sudo='sudo '
+
+# Use neovim
+alias vim='nvim'
+alias vi='nvim'
+
+# Get week number
+alias week='date +%V'
+
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, and their installed packages
+alias update='sudo softwareupdates -i -a; brew update; brew upgrade; brew cleanup; sudo gem update --system; sudo gem update; sudo gem cleanup'
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'

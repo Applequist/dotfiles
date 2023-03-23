@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+cd "$(dirname "${BASH_SOURCE}")" || exit;
 
 git pull origin main;
 
@@ -16,9 +16,10 @@ function doIt() {
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
+    echo "I am doing it...";
     doIt;
 else
-    read -p "This may overwrite existing files in your home directory. Do you want to proceed? (y/n) " -n 1;
+    read -rp "This may overwrite existing files in your home directory. Do you want to proceed? (y/n) " -n 1;
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         doIt;
