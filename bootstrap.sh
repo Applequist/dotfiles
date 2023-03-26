@@ -16,7 +16,6 @@ function doIt() {
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
-    echo "I am doing it...";
     doIt;
 else
     read -rp "This may overwrite existing files in your home directory. Do you want to proceed? (y/n) " -n 1;

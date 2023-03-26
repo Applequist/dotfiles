@@ -1,0 +1,17 @@
+# bun 
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# bun completions. To generate, run: 
+# $ bun completions > $HOME/.bun/_bun 
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# SDKMAN
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+# ghcup Haskell tool
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
+
+# OCaml opam configuration
+[[ ! -r "$HOME/.opam/opam-init/init.sh" ]] || source "$HOME/.opam/opam-init/init.sh"
+
