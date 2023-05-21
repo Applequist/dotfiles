@@ -16,10 +16,10 @@
 	required = true
 	clean = git-lfs clean -- %f
 
-[credential]
-	helper = /usr/local/bin/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
+[credential "https://github.com"]
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/local/bin/gh auth git-credential
 
 [includeIf "gitdir:~/WorkRepos/"]
 	path = ~/.config/git/work.inc
