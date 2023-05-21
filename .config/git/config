@@ -2,6 +2,7 @@
 [user]
 	name = Brieuc Desoutter
 	email = brieuc.desoutter@gmail.com
+    signingkey = /Users/brieuc/.ssh/id_Applequist_github.pub
 
 [core]
 	; Don't trust file modes
@@ -24,3 +25,5 @@
 [includeIf "gitdir:~/WorkRepos/"]
 	path = ~/.config/git/work.inc
 
+[gpg]
+    format = ssh
