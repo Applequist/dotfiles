@@ -9,8 +9,6 @@
 	
 [init]
 	defaultBranch = master
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
@@ -21,7 +19,3 @@
 [includeIf "gitdir:~/WorkRepos/"]
 	path = ~/.config/git/work.inc
 
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
-[credential "https://gitlab.kaust.edu.sa"]
-	provider = generic
