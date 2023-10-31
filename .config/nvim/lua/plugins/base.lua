@@ -1,4 +1,7 @@
 return {
+  -- Common dependency
+  { "nvim-lua/plenary.nvim" },
+
   -- My favorite colorscheme so far
   {
     "rmehri01/onenord.nvim",
