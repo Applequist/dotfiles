@@ -1,4 +1,3 @@
-print("Setting base keymaps...")
 local util = require("config.util")
 
 local map = util.map

@@ -1,5 +1,3 @@
-print("Setting base options...")
-
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
