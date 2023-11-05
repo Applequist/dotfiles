@@ -6,6 +6,7 @@ git pull origin main;
 
 function doIt() {
   rsync --exclude ".git" \
+    --exclude "README.md" \
     --exclude "apply.sh" \
     -avh --no-perms . ~;
   source ~/.profile;
