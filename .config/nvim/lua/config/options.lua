@@ -4,3 +4,4 @@
 local opt = vim.opt
 
 opt.mouse = "" -- disable mouse interactions
+opt.autowrite = false
